@@ -173,19 +173,15 @@ nav {
     background-color: var(--bg-color);
 }
 
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    text-align: left;
-}
-
-.about-image img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+.about-image {
+    padding: 5px;
+    background: var(--primary-gradient);
     border-radius: 50%;
-    display: block; /* Fixes potential small gaps */
+    display: inline-block; /* Keeps it as a circle */
+    box-shadow: var(--shadow);
+    
+    /* NEW: Center the image and add vertical space */
+    margin: 0 auto 2.5rem auto; /* Top: 0, Right: auto, Bottom: 2.5rem, Left: auto */
 }
 /* This is the new gradient frame */
 .about-image {
@@ -196,9 +192,10 @@ nav {
     box-shadow: var(--shadow);
 }
 
-.about-text p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+.about-text {
+    max-width: 800px; /* Make the text narrower for readability */
+    margin: 0 auto;   /* Center the text block */
+    text-align: left; /* Align text to the left */
 }
 
 /* Projects Section */
