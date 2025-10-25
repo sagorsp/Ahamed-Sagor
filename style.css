@@ -128,7 +128,9 @@ nav {
     justify-content: center;
     /* Use our new gradient */
     background: var(--primary-gradient);
-    background-image: var(--primary-gradient), url('images/background.jpg'); 
+    background-image: var(--primary-gradient), url('images/background.jpg');
+    background-size: cover;
+    background-position: center; 
     color: var(--light-color);
     padding-top: 60px; /* Offset for fixed header */
     text-align: center;
