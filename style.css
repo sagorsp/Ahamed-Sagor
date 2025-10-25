@@ -184,18 +184,23 @@ nav {
     margin: 0 auto 2.5rem auto; /* Top: 0, Right: auto, Bottom: 2.5rem, Left: auto */
 }
 /* This is the new gradient frame */
-.about-image {
-    padding: 2px;
-    background: var(--primary-gradient);
-    border-radius: 50%;
-    display: inline-block;
-    box-shadow: var(--shadow);
+.about-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; /* This makes the photo round */
+    display: block;
 }
 
 .about-text {
-    max-width: 800px; /* Make the text narrower for readability */
-    margin: 0 auto;   /* Center the text block */
-    text-align: left; /* Align text to the left */
+    max-width: 800px; /* Stops text from being too wide */
+    margin: 0 auto;   /* Centers the text block */
+    text-align: left; /* Aligns the text inside to the left */
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem; /* Makes text readable */
 }
 
 /* Projects Section */
