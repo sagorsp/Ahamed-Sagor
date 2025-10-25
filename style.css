@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;700&display=swap');
 /* --- Global Styles & Variables --- */
 :root {
-    --primary-color: #4A90E2; /* A more modern blue */
-    --primary-gradient: linear-gradient(135deg, #4A90E2 0%, #0056b3 100%);
+    --primary-color: #faa11b; /* A more modern orange */
+    --primary-gradient: linear-gradient(135deg, #4adde2a1 0%, #cebb16c0 100%);
     --secondary-color: #333;
     --bg-color: #f9f9f9;
     --light-color: #ffffff;
@@ -127,7 +127,8 @@ nav {
     align-items: center;
     justify-content: center;
     /* Use our new gradient */
-    background: var(--primary-gradient); 
+    background: var(--primary-gradient);
+    background-image: var(--primary-gradient), url('images/background.jpg'); 
     color: var(--light-color);
     padding-top: 60px; /* Offset for fixed header */
     text-align: center;
