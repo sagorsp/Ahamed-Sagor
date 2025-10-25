@@ -1,82 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sagar's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Personal Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="nav-container">
-      <div class="logo" style="color:white;font-weight:bold;">Sagar</div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <header>
+        <nav>
+            <a href="#home" class="logo">Ahamed Sagor</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm Ahamed Sagor</h1>
+        <p>Graphic Designer, Photographer & Social Media Manager</p>
+        <a href="#projects" class="cta-button">View My Work</a>
     </div>
-  </nav>
+</section>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <h1>Hello, I’m Sagar</h1>
-    <p>Web Developer | Tech Enthusiast 🚀</p>
-    <button onclick="alert('Thanks for visiting!')">Hire Me</button>
-  </div>
-
-  <!-- About Section Preview -->
-  <div class="about">
+        <section id="about">
     <h2>About Me</h2>
-    <p>I’m learning web development and building cool projects to showcase my skills.</p>
-  </div>
-
-  <!-- Projects Section Preview -->
-  <div class="projects">
-    <h2>My Projects</h2>
-    <div class="project-cards">
-      <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>My first personal portfolio project with HTML, CSS, and JS.</p>
-      </div>
-      <div class="card">
-        <h3>To-Do List App</h3>
-        <p>JavaScript project to manage tasks efficiently.</p>
-      </div>
-      <div class="card">
-        <h3>Responsive Navbar Demo</h3>
-        <p>Sticky and responsive navbar with hamburger menu.</p>
-      </div>
+    <div class="about-content">
+        <div class="about-image">
+            <img src="images/ahamed-sagor.jpg" alt="A photo of Ahamed Sagor">
+        </div>
+        <div class="about-text">
+            <p>
+                Hi, I’m Ahamed Sagor — a passionate graphic designer, photographer, and social media manager dedicated to creating designs and visuals that inspire and connect.
+            </p>
+            <p>
+                With years of hands-on experience in creative design, brand development, and digital marketing, I combine artistic vision with strategic thinking to help businesses grow and stand out online. I’m also the founder of Smart Revolution, a platform focused on technology, innovation, and creative growth.
+            </p>
+            <p>
+                Every project I take on is an opportunity to tell a story — through design, photography, and digital presence — that leaves a lasting impression.
+            </p>
+        </div>
     </div>
-  </div>
+</section>
 
-  <!-- Contact Section Preview -->
-  <div class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: sagarsp@myself.com</p>
-    <p>Phone: 01841895931</p>
-    <p><Address>Shop:034A,Level-4,Bloack-A,Jamuna Future Park</Address></p>
-  </div>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                   <img src="images/samartrevolutionlogo.png" alt="Smart Revolution">
+                      <h3>Smart Revolution</h3>
+                       <p>Founder of a platform focused on technology, innovation, and creative growth.</p>
+                        <div class="project-links">
+                           <a href="[Your Smart Revolution URL]" target="_blank">Visit Platform</a>
+                            </div>
+                 </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Sagar. All rights reserved.</p>
-  </footer>
+                <div class="project-card">
+                    <img src="path/to/project2-image.jpg" alt="Screenshot of Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of your project. What did it do? What problem did it solve?</p>
+                    <div class="project-links">
+                        <a href="[Link to live demo]" target="_blank">Live Demo</a>
+                        <a href="[Link to GitHub repo]" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="path/to/project3-image.jpg" alt="Screenshot of Project 3">
+                    <h3>Project Title 3</h3>
+                    <p>A brief description of your project. What did it do? What problem did it solve?</p>
+                    <div class="project-links">
+                        <a href="[Link to live demo]" target="_blank">Live Demo</a>
+                        <a href="[Link to GitHub repo]" target="_blank">GitHub</a>
+                    </div>
+                </div>
 
-  <script>
-    function toggleMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      navLinks.classList.toggle('active');
-    }
-  </script>
+            </div>
+        </section>
+        
+        <section id="skills">
+    <h2>My Skills</h2>
+    <ul class="skills-list">
+        <li>Graphic Design</li>
+        <li>Photography</li>
+        <li>Social Media Management</li>
+        <li>Brand Development</li>
+        <li>Digital Marketing</li>
+        <li>Creative Strategy</li>
+        <li>Adobe Creative Suite</li>
+        </ul>
+</section>
 
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>I'm currently open to new opportunities. Feel free to reach out!</p>
+            <a href="mailto:shagurhd@gmail.com" class="cta-button">Email Me</a>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sagorsp/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sagorsp" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/sag0rsp" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a herf="https://facebook.com/sag0r.sp" target="_blank"><i class="fab fa-facebook"></i></a>"
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 by Ahamed Sagor. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
