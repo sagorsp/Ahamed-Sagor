@@ -189,10 +189,10 @@ nav {
 }
 /* This is the new gradient frame */
 .about-image {
-    padding: 5px; /* This controls the border thickness */
+    padding: 2px;
     background: var(--primary-gradient);
     border-radius: 50%;
-    display: inline-block; /* Makes it wrap the image */
+    display: inline-block;
     box-shadow: var(--shadow);
 }
 
@@ -227,7 +227,8 @@ nav {
 .project-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
+    padding: 1rem;
 }
 
 .project-card h3 {
