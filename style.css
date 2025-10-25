@@ -24,17 +24,21 @@ html {
 }
 
 body {
-    font-family: var(--font-body); /* <-- CHANGED */
+    font-family: var(--font-body); 
     line-height: 1.6;
     background-color: var(--light-color);
     color: var(--secondary-color);
 }
 
 section {
-    padding: 5rem 2rem;
-    max-width: 1200px;
-    margin: auto;
+    padding: 5rem 0;
     text-align: center;
+}
+/* This new class holds our content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* 0 top/bottom, auto left/right */
+    padding: 0 2rem; /* Keeps content off the edges on mobile */
 }
 
 h1, h2, h3 {
@@ -242,6 +246,11 @@ nav {
 .project-links a {
     margin-right: 1rem;
     font-weight: bold;
+    color: var(--primary-color);
+}
+.project-links a:hover {
+    color: var(--secondary-color); /* Changes text to dark grey */
+    background-color: transparent; /* IMPORTANT: Keeps background clear */
 }
 
 /* Skills Section */
