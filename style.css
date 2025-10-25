@@ -5,7 +5,7 @@
     --primary-gradient: linear-gradient(135deg, #4adde2a1 0%, #cebb16c0 100%);
     --secondary-color: #333;
     --bg-color: #f9f9f9;
-    --light-color: #ffffff;
+    --light-color: #1f242d;
     /* A softer, layered shadow */
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.05);
 
@@ -122,15 +122,11 @@ nav {
     transition: all 0.3s ease;
 }
 
-/* --- Main Content Sections --- */
-
-/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Use our new gradient */
     background: var(--primary-gradient);
     background-image: var(--primary-gradient), url('images/background.jpg');
     background-size: cover;
