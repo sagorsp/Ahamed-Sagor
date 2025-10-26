@@ -145,6 +145,75 @@ nav {
     margin-bottom: 2rem;
 }
 
+/* --- New Hero Title Styles --- */
+
+.hero-intro {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-body);
+}
+
+.hero-title {
+    font-family: var(--font-heading); /* Your Montserrat font */
+    font-size: 6rem; /* Make it large! */
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0 0 2rem 0;
+}
+
+.hero-title span {
+    display: block; /* This makes the text stack vertically */
+}
+
+.title-solid {
+    color: var(--secondary-color); /* Your dark text color */
+    
+    /* --- ADD THESE LINES --- */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.title-outline {
+    color: transparent;
+    /* This is the magic for the outline effect */
+    -webkit-text-stroke: 2px var(--secondary-color);
+    text-stroke: 2px var(--secondary-color);
+    opacity: 0.6; /* Makes it a bit lighter, like in the video */
+}
+
+/* --- These are the new hover effects --- */
+
+.title-solid:hover {
+    /* This turns the solid text into an outline */
+    color: transparent;
+    -webkit-text-stroke: 2px var(--secondary-color);
+    text-stroke: 2px var(--secondary-color);
+    opacity: 0.6;
+}
+
+.title-outline:hover {
+    /* This fills in the outline text */
+    color: var(--secondary-color);
+    -webkit-text-stroke: 0;
+    text-stroke: 0;
+    opacity: 1;
+}
+
+.hero .cta-button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-color: var(--primary-color);
+}
+
+.hero .cta-button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
 .cta-button {
     display: inline-block;
     background-color: var(--light-color);
@@ -356,53 +425,4 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-}
-/* --- New Hero Title Styles --- */
-
-.hero-intro {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #555;
-    margin-bottom: 0.5rem;
-    font-family: var(--font-body);
-}
-
-.hero-title {
-    font-family: var(--font-heading); /* Your Montserrat font */
-    font-size: 6rem; /* Make it large! */
-    font-weight: 700;
-    line-height: 1.1;
-    text-transform: uppercase;
-    margin: 0 0 2rem 0;
-}
-
-.hero-title span {
-    display: block; /* This makes the text stack vertically */
-}
-
-.title-solid {
-    color: var(--secondary-color); /* Your dark text color */
-}
-
-.title-outline {
-    color: transparent;
-    /* This is the magic for the outline effect */
-    -webkit-text-stroke: 2px var(--secondary-color);
-    text-stroke: 2px var(--secondary-color);
-    opacity: 0.6; /* Makes it a bit lighter, like in the video */
-}
-
-
-/* --- Button Fix for New Light Background --- */
-/* We need to invert your button colors on the new white hero */
-.hero .cta-button {
-    background-color: var(--primary-color);
-    color: var(--light-color);
-    border-color: var(--primary-color);
-}
-
-.hero .cta-button:hover {
-    background-color: transparent;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
 }
