@@ -148,7 +148,7 @@ nav {
 /* --- New Hero Title Styles --- */
 
 .hero-intro {
-    font-size: 1.1rem;
+    font-size: 2.1rem;
     font-weight: 500;
     color: #555;
     margin-bottom: 0.5rem;
@@ -156,8 +156,8 @@ nav {
 }
 
 .hero-title {
-    font-family: var(--font-heading); /* Your Montserrat font */
-    font-size: 6rem; /* Make it large! */
+    font-family: var(--font-heading); 
+    font-size: 6rem;
     font-weight: 700;
     line-height: 1.1;
     text-transform: uppercase;
@@ -165,37 +165,33 @@ nav {
 }
 
 .hero-title span {
-    display: block; /* This makes the text stack vertically */
+    display: block;
 }
 
 .title-solid {
-    color: var(--secondary-color); /* Your dark text color */
+    color: var(--secondary-color);
     
-    /* --- ADD THESE LINES --- */
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in;
     cursor: pointer;
 }
 
 .title-outline {
-    color: transparent;
-    /* This is the magic for the outline effect */
-    -webkit-text-stroke: 2px var(--secondary-color);
-    text-stroke: 2px var(--secondary-color);
-    opacity: 0.6; /* Makes it a bit lighter, like in the video */
-}
-
-/* --- These are the new hover effects --- */
-
-.title-solid:hover {
-    /* This turns the solid text into an outline */
     color: transparent;
     -webkit-text-stroke: 2px var(--secondary-color);
     text-stroke: 2px var(--secondary-color);
     opacity: 0.6;
 }
 
+
+.title-solid:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px var(orange);
+    text-stroke: 2px var(orange);
+    opacity: 0.6;
+}
+
 .title-outline:hover {
-    /* This fills in the outline text */
+
     color: var(--secondary-color);
     -webkit-text-stroke: 0;
     text-stroke: 0;
@@ -423,6 +419,19 @@ footer {
 
     .about-content {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        text-align: center; 
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-intro {
         text-align: center;
     }
 }
