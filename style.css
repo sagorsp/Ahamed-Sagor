@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;700&display=swap');
-/* --- Global Styles & Variables --- */
+
 :root {
-    --primary-color: #faa11b; /* A more modern orange */
+    --primary-color: #faa11b; 
     --primary-gradient: linear-gradient(135deg, #4adde2a1 0%, #cebb16c0 100%);
     --secondary-color: #333;
     --bg-color: #f9f9f9;
     --light-color: #dddddd;
-    /* A softer, layered shadow */
+    
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.05);
 
     --font-heading: 'Montserrat', sans-serif;
@@ -34,16 +34,16 @@ section {
     padding: 5rem 0;
     text-align: center;
 }
-/* This new class holds our content */
+
 .container {
     max-width: 1200px;
-    margin: 0 auto; /* 0 top/bottom, auto left/right */
-    padding: 0 2rem; /* Keeps content off the edges on mobile */
+    margin: 0 auto; 
+    padding: 0 2rem; 
 }
 
 h1, h2, h3 {
-    font-family: var(--font-heading); /* <-- ADDED */
-    font-weight: 700; /* <-- ADDED (Ensures it's bold) */
+    font-family: var(--font-heading); 
+    font-weight: 700; 
     margin-bottom: 1.5rem;
 }
 
@@ -63,7 +63,7 @@ a {
     color: var(--primary-color);
 }
 
-/* --- Header & Navigation --- */
+
 header {
     background-color: var(--light-color);
     box-shadow: var(--shadow);
@@ -83,9 +83,9 @@ nav {
 }
 
 .logo {
-    font-family: var(--font-heading); /* <-- ADDED */
+    font-family: var(--font-heading); 
     font-size: 1.5rem;
-    font-weight: 700; /* <-- CHANGED (from 'bold') */
+    font-weight: 700; 
     color: var(--secondary-color);
 }
 
@@ -108,7 +108,7 @@ nav {
     color: var(--primary-color);
 }
 
-/* Hamburger Menu (for mobile) */
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -132,7 +132,7 @@ nav {
     background-size: cover;
     background-position: center; 
     color: var(--secondary-color);
-    padding-top: 60px; /* Offset for fixed header */
+    padding-top: 60px; 
     text-align: left;
 }
 
@@ -145,7 +145,6 @@ nav {
     margin-bottom: 2rem;
 }
 
-/* --- New Hero Title Styles --- */
 
 .hero-intro {
     font-size: 2.1rem;
@@ -194,7 +193,7 @@ nav {
 
     color: var(--secondary-color);
     -webkit-text-stroke: 0;
-    text-stroke: 0;
+    text-stroke: 2px var(--primary-color);
     opacity: 1;
 }
 
@@ -219,17 +218,17 @@ nav {
     font-weight: bold;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    border: 2px solid var(--light-color); /* Add a border */
+    border: 2px solid var(--light-color); 
 }
 
 .cta-button:hover {
-    background-color: transparent; /* Invert on hover */
-    color: var(--light-color); /* Invert on hover */
+    background-color: transparent; 
+    color: var(--light-color); 
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* About Section */
+
 #about {
     background-color: var(--bg-color);
 }
@@ -238,33 +237,33 @@ nav {
     padding: 5px;
     background: var(--primary-gradient);
     border-radius: 50%;
-    display: inline-block; /* Keeps it as a circle */
+    display: inline-block; 
     box-shadow: var(--shadow);
     
-    /* NEW: Center the image and add vertical space */
-    margin: 0 auto 2.5rem auto; /* Top: 0, Right: auto, Bottom: 2.5rem, Left: auto */
+    
+    margin: 0 auto 2.5rem auto; 
 }
-/* This is the new gradient frame */
+
 .about-image img {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 50%; /* This makes the photo round */
+    border-radius: 50%; 
     display: block;
 }
 
 .about-text {
-    max-width: 800px; /* Stops text from being too wide */
-    margin: 0 auto;   /* Centers the text block */
-    text-align: left; /* Aligns the text inside to the left */
+    max-width: 800px; 
+    margin: 0 auto;   
+    text-align: left; 
 }
 
 .about-text p {
     margin-bottom: 1rem;
-    font-size: 1.1rem; /* Makes text readable */
+    font-size: 1.1rem; 
 }
 
-/* Projects Section */
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -278,7 +277,7 @@ nav {
     border-radius: 8px;
     overflow: hidden;
     text-align: left;
-    transition: all 0.3s ease; /* So shadow and transform both animate */
+    transition: all 0.3s ease; 
 }
 
 
@@ -313,11 +312,11 @@ nav {
     color: var(--primary-color);
 }
 .project-links a:hover {
-    color: var(--secondary-color); /* Changes text to dark grey */
-    background-color: transparent; /* IMPORTANT: Keeps background clear */
+    color: var(--secondary-color); 
+    background-color: transparent; 
 }
 
-/* Skills Section */
+
 #skills {
     background-color: var(--bg-color);
 }
@@ -338,7 +337,7 @@ nav {
     font-weight: 500;
 }
 
-/* Contact Section */
+
 #contact p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -359,7 +358,7 @@ nav {
     color: var(--primary-color);
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -367,7 +366,7 @@ footer {
     color: var(--light-color);
 }
 
-/* --- Responsive Design (Mobile) --- */
+
 @media (max-width: 768px) {
     h2 {
         font-size: 2rem;
@@ -376,7 +375,7 @@ footer {
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%; /* Start off-screen */
+        right: -100%; 
         height: 100vh;
         width: 60%;
         background-color: var(--light-color);
@@ -388,7 +387,7 @@ footer {
     }
 
     .nav-links.nav-active {
-        right: 0; /* Slide in */
+        right: 0; 
     }
 
     .nav-links li {
@@ -399,7 +398,6 @@ footer {
         display: block;
     }
 
-    /* Hamburger Animation */
     .hamburger.toggle .line:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
@@ -423,7 +421,8 @@ footer {
     }
 
     .hero {
-        text-align: center; 
+        text-align: center;
+        background-position: right center; 
     }
     
     .hero-title {
